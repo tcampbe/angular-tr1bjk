@@ -1,0 +1,9 @@
+<div *ngFor = "let order of orders"> 
+  <p>{{order.id}} </p> 
+  <p>{{order.product}}</p>
+  <p *ngIf = "order.delivered==true" style="color : green">delivered</p>
+  <p *ngIf = "order.delivered==false" style = "color : red">not delivered</p>
+
+  </div>
+
+
